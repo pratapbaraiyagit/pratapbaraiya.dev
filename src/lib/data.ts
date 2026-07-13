@@ -348,6 +348,42 @@ export const projects = [
     githubUrl: null,
     featured: true,
   },
+  {
+    id: "paymore-fms-admin",
+    number: "16",
+    title: "PayMore FMS Admin",
+    subtitle: "Franchise Management System — corporate admin portal",
+    description:
+      "Full-stack Franchise Management System (FMS) for PayMore's corporate teams. Covers franchise & group management, location lifecycle (acquisition → onboarding → open), deal tracking, lease signing, task/todo systems, compliance & buying ops, P&L reporting, inventory benchmarking, consolidated dashboards, file manager with document sharing, announcements, and multi-region USA/Canada deployments.",
+    tech: ["React 18", "Redux Toolkit", "Material UI", "React Router v6", "Formik", "ApexCharts", "Mapbox GL", "Socket.io", "Pusher", "Node.js", "Express", "MongoDB", "JWT", "Stripe", "AWS S3", "node-cron", "Discord.js", "OpenAI"],
+    accentColor: "#6366F1",
+    gradient: "linear-gradient(135deg, #6366F1 0%, #4338CA 100%)",
+    category: "Franchise",
+    year: "2024",
+    industry: "Franchise Operations",
+    businessValue: "Unified franchise, location, deal, and compliance workflows into one portal — enabling corporate ops to manage multi-region USA/Canada franchise networks in real time.",
+    liveUrl: "https://fms-admin.paymore.tech/login",
+    githubUrl: null,
+    featured: true,
+  },
+  {
+    id: "paymore-fms-franchisee",
+    number: "17",
+    title: "PayMore FMS Franchisee Portal",
+    subtitle: "Self-service portal for PayMore franchise owners & operators",
+    description:
+      "Franchisee-facing side of PayMore's FMS so store owners can run day-to-day operations independently. Covers location-wise task tracking, onboarding flows, deal & development schedule visibility, compliance management, file manager, supply ordering, Stripe fee/payment flows, Mapbox maps, vendor directory, announcements, and real-time Socket.io updates — all franchise-scoped so owners only see their own data.",
+    tech: ["React 18", "Redux Toolkit", "Material UI", "React Router v6", "Formik", "Yup", "Axios", "ApexCharts", "Mapbox GL", "Socket.io", "Stripe.js", "React Dropzone", "Swiper", "Node.js", "Express", "MongoDB", "JWT", "AWS S3"],
+    accentColor: "#F59E0B",
+    gradient: "linear-gradient(135deg, #F59E0B 0%, #B45309 100%)",
+    category: "Franchise",
+    year: "2024",
+    industry: "Franchise Operations",
+    businessValue: "Gave PayMore franchisees a self-serve portal for tasks, compliance, documents, and payments — reducing corporate support requests and accelerating store onboarding.",
+    liveUrl: "https://fms-franchisee.paymore.tech/login",
+    githubUrl: null,
+    featured: true,
+  },
 ];
 
 // ─── Experience ───────────────────────────────────────────────────
