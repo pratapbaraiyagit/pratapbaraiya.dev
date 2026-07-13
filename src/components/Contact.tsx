@@ -132,7 +132,7 @@ export function Contact() {
               background: "linear-gradient(135deg, #2563eb, #7c3aed)",
               color: "#fff", textAlign: "center",
             }}>
-              <div style={{ fontSize: 36, marginBottom: 12 }}>🚀</div>
+
               <h3 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 18, fontWeight: 700, marginBottom: 8 }}>
                 Open to Opportunities
               </h3>
