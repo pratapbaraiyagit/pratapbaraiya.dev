@@ -127,23 +127,36 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         {/* Action buttons */}
         <div style={{ display: "flex", gap: 8 }}>
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
+          {project.liveUrl ? (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                padding: "9px 12px", borderRadius: 10, textDecoration: "none",
+                background: project.gradient,
+                color: "#fff", fontSize: 12, fontWeight: 700,
+                boxShadow: `0 4px 14px ${project.accentColor}30`,
+                transition: "opacity .2s, transform .2s",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.9"; (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; (e.currentTarget as HTMLElement).style.transform = ""; }}
+            >
+              <ExternalLink size={12} /> Live Demo
+            </a>
+          ) : (
+            <span style={{
               flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              padding: "9px 12px", borderRadius: 10, textDecoration: "none",
-              background: project.gradient,
-              color: "#fff", fontSize: 12, fontWeight: 700,
-              boxShadow: `0 4px 14px ${project.accentColor}30`,
-              transition: "opacity .2s, transform .2s",
-            }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.9"; (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; (e.currentTarget as HTMLElement).style.transform = ""; }}
-          >
-            <ExternalLink size={12} /> Live Demo
-          </a>
+              padding: "9px 12px", borderRadius: 10,
+              border: "1px solid var(--border)",
+              background: "var(--bg-secondary)",
+              color: "var(--text-muted)", fontSize: 12, fontWeight: 600,
+              cursor: "default", userSelect: "none",
+            }}>
+              🔒 Private / NDA
+            </span>
+          )}
           {project.githubUrl && (
             <a
               href={project.githubUrl}
@@ -195,8 +208,8 @@ export function Projects() {
           <h2 className="section-title" style={{ fontSize: "clamp(36px,5vw,56px)", marginBottom: 16 }}>
             {projects.length} Real-World <span className="gradient-text">Projects</span>
           </h2>
-          <p style={{ maxWidth: 540, margin: "0 auto", fontSize: 18, color: "var(--text-secondary)", lineHeight: 1.7 }}>
-            Production applications serving real users — from hotel kiosks processing 120K+ check-ins to UK Christmas party booking platforms.
+          <p style={{ maxWidth: 600, margin: "0 auto", fontSize: 18, color: "var(--text-secondary)", lineHeight: 1.7 }}>
+            Production applications serving real users — from hotel kiosks processing 120K+ check-ins and UK event booking platforms to full-stack CMS systems powering PayMore's multi-country retail network.
           </p>
         </motion.div>
 
