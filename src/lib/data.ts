@@ -20,7 +20,7 @@ export const personalInfo = {
 export const stats = [
   { label: "Years Experience", value: "~5", suffix: "" },
   { label: "Years with React.js", value: "4+", suffix: "" },
-  { label: "Projects Delivered", value: "25+", suffix: "" },
+  { label: "Projects Delivered", value: "30+", suffix: "" },
   { label: "Happy Clients", value: "20+", suffix: "" },
 ];
 

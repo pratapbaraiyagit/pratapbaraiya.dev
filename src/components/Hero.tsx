@@ -409,7 +409,7 @@ export function Hero() {
                 display: "flex", alignItems: "center", justifyContent: "center",
                 fontWeight: 800, fontSize: 13, color: "#fff",
               }}>
-                25+
+                30+
               </div>
               <div>
                 <div style={{ fontSize: 14, fontWeight: 700, color: "var(--text-primary)", lineHeight: 1.2 }}>Projects</div>
