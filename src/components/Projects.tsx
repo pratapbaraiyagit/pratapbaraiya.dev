@@ -255,6 +255,7 @@ export function Projects() {
             {featured.length > 0 && (
               <>
                 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+                  <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
                   <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: ".1em", color: "var(--text-muted)" }}>Featured</span>
                   <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
                 </div>
@@ -268,6 +269,7 @@ export function Projects() {
             {others.length > 0 && (
               <>
                 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+                  <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
                   <span style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: ".1em", color: "var(--text-muted)" }}>More Projects</span>
                   <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
                 </div>
