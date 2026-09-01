@@ -539,6 +539,23 @@ export const projects = [
     liveUrl: "https://sole-rush.vercel.app/contact",
     githubUrl: null,
     featured: false,
+  },
+  {
+    id: "mydailytoolbox",
+    number: "26",
+    title: "MyDailyToolbox",
+    subtitle: "All-in-One Online Utility Platform",
+    description: "A massive Next.js application providing over 70 free online tools including PDF editors, calculators, image compressors, and OCR utilities. Features purely client-side processing for enhanced speed and privacy.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "Firebase", "pdf-lib", "tesseract.js"],
+    accentColor: "#10B981",
+    gradient: "linear-gradient(135deg, #10B981 0%, #047857 100%)",
+    category: "Utility",
+    year: "2024",
+    industry: "SaaS / Utilities",
+    businessValue: "Built an extensive, SEO-optimized platform entirely reliant on client-side processing, eliminating server costs while protecting user privacy.",
+    liveUrl: "https://mydailytoolbox.com/",
+    githubUrl: null,
+    featured: true,
   }
 ];
 
