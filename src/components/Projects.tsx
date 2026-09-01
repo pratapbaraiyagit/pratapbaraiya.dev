@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, TrendingUp, ChevronDown, ChevronUp } from "lucide-react";
 import { GithubIcon } from "./SocialIcons";
@@ -185,6 +185,32 @@ export function Projects() {
   const [filter, setFilter] = useState("All");
   const [showAll, setShowAll] = useState(false);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get("category");
+    if (cat && CATEGORIES.includes(cat)) {
+      setFilter(cat);
+      // Wait for React to render, then scroll
+      setTimeout(() => {
+        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, []);
+
+  const handleSetFilter = (cat: string) => {
+    setFilter(cat);
+    setShowAll(false);
+    
+    // Update URL
+    const url = new URL(window.location.href);
+    if (cat === "All") {
+      url.searchParams.delete("category");
+    } else {
+      url.searchParams.set("category", cat);
+    }
+    window.history.replaceState({}, "", url);
+  };
+
   const filtered = filter === "All" ? projects : projects.filter((p) => p.category === filter);
   const featured  = filtered.filter((p) => p.featured);
   const others    = filtered.filter((p) => !p.featured);
@@ -224,7 +250,7 @@ export function Projects() {
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
-              onClick={() => { setFilter(cat); setShowAll(false); }}
+              onClick={() => { handleSetFilter(cat); }}
               style={{
                 padding: "8px 20px", borderRadius: 99, cursor: "pointer",
                 border: filter === cat ? "none" : "1px solid var(--border)",

@@ -47,9 +47,18 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
+  useEffect(() => {
+    if (window.location.hash) {
+      setTimeout(() => {
+        document.querySelector(window.location.hash)?.scrollIntoView({ behavior: "smooth" });
+      }, 500);
+    }
+  }, []);
+
   const scrollTo = (href: string) => {
     setOpen(false);
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, "", href);
   };
 
   return (
