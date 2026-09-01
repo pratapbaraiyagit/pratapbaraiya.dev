@@ -556,6 +556,23 @@ export const projects = [
     liveUrl: "https://mydailytoolbox.com/",
     githubUrl: null,
     featured: true,
+  },
+  {
+    id: "finora-capital",
+    number: "27",
+    title: "Finora Capital",
+    subtitle: "Financial Dashboard & Capital Management Demo",
+    description: "A comprehensive financial dashboard built with Next.js and Supabase. Features advanced data visualization with Recharts and robust form handling using Zod and React Hook Form.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "Recharts", "Supabase", "Zod"],
+    accentColor: "#3B82F6",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
+    category: "Demo",
+    year: "2024",
+    industry: "Demo",
+    businessValue: "Demonstrates complex data visualization, secure form handling, and full-stack integration using Supabase in a financial context.",
+    liveUrl: "https://finora-capital-demo.vercel.app/",
+    githubUrl: null,
+    featured: false,
   }
 ];
 
