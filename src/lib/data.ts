@@ -590,6 +590,23 @@ export const projects = [
     liveUrl: null,
     githubUrl: null,
     featured: true,
+  },
+  {
+    id: "saffron-and-ember",
+    number: "29",
+    title: "Saffron & Ember",
+    subtitle: "Modern American Dining Experience",
+    description: "A premium fine-dining restaurant website featuring cinematic scroll animations, a bespoke dark mode aesthetic, and modern frontend architecture.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    accentColor: "#FF3B00",
+    gradient: "linear-gradient(135deg, #FF3B00 0%, #FF8C00 100%)",
+    category: "Demo",
+    year: "2024",
+    industry: "Hospitality / Dining",
+    businessValue: "Demonstrates high-end visual design, cutting-edge UI animations, and robust Next.js App Router capabilities.",
+    liveUrl: "https://saffron-and-ember.vercel.app/",
+    githubUrl: null,
+    featured: false,
   }
 ];
 
