@@ -59,7 +59,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           letterSpacing: "-0.04em",
           userSelect: "none",
         }}>
-          {project.number}
+          {(index + 1).toString().padStart(2, '0')}
         </span>
         {/* Category + Year badges */}
         <div style={{ display: "flex", gap: 8, alignItems: "center" }}>

@@ -80,7 +80,6 @@ export const skillGroups = [
 export const projects = [
   {
     id: "gxp-pms-admin",
-    number: "01",
     title: "GXP PMS Admin",
     subtitle: "Admin panel for Property Management System",
     description:
@@ -98,7 +97,6 @@ export const projects = [
   },
   {
     id: "gxp-kiosk-self-checking",
-    number: "02",
     title: "GXP Kiosk Self Checking",
     subtitle: "Self-service kiosk for hotel guest check-ins",
     description:
@@ -116,7 +114,6 @@ export const projects = [
   },
   {
     id: "gxp-agent-console",
-    number: "03",
     title: "GXP Agent Console",
     subtitle: "Customer service agent console for hospitality",
     description:
@@ -134,7 +131,6 @@ export const projects = [
   },
   {
     id: "best-parties-ever",
-    number: "04",
     title: "Best Parties Ever",
     subtitle: "Christmas Party Booking Platform for UK",
     description:
@@ -152,7 +148,6 @@ export const projects = [
   },
   {
     id: "grand-luxe-hotel",
-    number: "05",
     title: "Grand Luxe Hotel",
     subtitle: "Luxury hotel booking platform",
     description:
@@ -170,7 +165,6 @@ export const projects = [
   },
   {
     id: "raffle-select",
-    number: "06",
     title: "Raffle Select",
     subtitle: "Social media giveaway winner picker",
     description:
@@ -188,7 +182,6 @@ export const projects = [
   },
   {
     id: "grand-paradise-hotel",
-    number: "07",
     title: "Grand Paradise Hotel",
     subtitle: "Hotel booking web app with Firebase",
     description:
@@ -206,7 +199,6 @@ export const projects = [
   },
   {
     id: "sclusive-concierge",
-    number: "08",
     title: "S'Clusive Concierge",
     subtitle: "Luxury lifestyle management platform",
     description:
@@ -224,7 +216,6 @@ export const projects = [
   },
   {
     id: "bagsguru-admin",
-    number: "09",
     title: "BagsGuru Admin",
     subtitle: "Admin panel for eco-friendly bag manufacturer",
     description:
@@ -242,7 +233,6 @@ export const projects = [
   },
   {
     id: "excellent-corporation",
-    number: "10",
     title: "Excellent Corporation",
     subtitle: "Diamond & jewelry trading platform",
     description:
@@ -259,26 +249,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: "your-shop",
-    number: "11",
-    title: "Your Shop",
-    subtitle: "Modern e-commerce app with React & Firebase",
-    description:
-      "A serverless online shopping application with Firebase backend, product listing search & filters, guest checkout, dynamic loading animations, and catalog management.",
-    tech: ["React.js", "Vite", "Firebase", "Bootstrap", "React Router", "AOS", "ESLint"],
-    accentColor: "#7C3AED",
-    gradient: "linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%)",
-    category: "E-commerce",
-    year: "2022",
-    industry: "E-commerce",
-    businessValue: "Achieved 98/100 Core Web Vitals mobile speed score, reducing bounce rate by 15%.",
-    liveUrl: "https://your-shop-topaz.vercel.app/",
-    githubUrl: "https://github.com/pratapbaraiyagit/your-shop",
-    featured: false,
-  },
-  {
     id: "paymore-site-admin",
-    number: "12",
     title: "PayMore Site Admin CMS",
     subtitle: "Full-stack CMS for PayMore's customer website",
     description:
@@ -296,7 +267,6 @@ export const projects = [
   },
   {
     id: "paymore-site",
-    number: "13",
     title: "PayMore Public Website",
     subtitle: "SEO-focused Next.js storefront for PayMore stores",
     description:
@@ -314,7 +284,6 @@ export const projects = [
   },
   {
     id: "paymore-marketing-admin",
-    number: "14",
     title: "PayMore Marketing Admin CMS",
     subtitle: "Admin panel for PayMore's franchisee marketing portal",
     description:
@@ -332,7 +301,6 @@ export const projects = [
   },
   {
     id: "paymore-marketing-site",
-    number: "15",
     title: "PayMore Marketing Portal",
     subtitle: "Authenticated Next.js portal for franchisee marketing assets",
     description:
@@ -350,7 +318,6 @@ export const projects = [
   },
   {
     id: "paymore-fms-admin",
-    number: "16",
     title: "PayMore FMS Admin",
     subtitle: "Franchise Management System — corporate admin portal",
     description:
@@ -368,7 +335,6 @@ export const projects = [
   },
   {
     id: "paymore-fms-franchisee",
-    number: "17",
     title: "PayMore FMS Franchisee Portal",
     subtitle: "Self-service portal for PayMore franchise owners & operators",
     description:
@@ -386,7 +352,6 @@ export const projects = [
   },
   {
     id: "paymore-paystation-kiosk",
-    number: "18",
     title: "PayMore PayStation Kiosk",
     subtitle: "Touchscreen cash payout kiosk for PayMore retail stores",
     description:
@@ -404,7 +369,6 @@ export const projects = [
   },
   {
     id: "paymore-pos",
-    number: "19",
     title: "PayMore POS (Admin + Franchise Platform)",
     subtitle: "Multi-region Point of Sale & franchise operations platform",
     description:
@@ -440,7 +404,6 @@ export const projects = [
   },
   {
     id: "dacitos",
-    number: "20",
     title: "Dacitos",
     subtitle: "Modern Landing Page with Smooth Scrolling",
     description: "A beautifully animated landing page built with Vite, React, Tailwind CSS, Framer Motion, and Lenis for buttery-smooth scrolling effects.",
@@ -457,7 +420,6 @@ export const projects = [
   },
   {
     id: "care-point-health",
-    number: "21",
     title: "Care Point Health",
     subtitle: "Healthcare Service Platform Demo",
     description: "A comprehensive healthcare application UI built using Next.js and Shadcn UI. Features clean, accessible component design and robust forms.",
@@ -473,25 +435,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: "fininclusion-landing-page",
-    number: "22",
-    title: "FinInclusion",
-    subtitle: "Fintech Landing Page Demo",
-    description: "A sleek, responsive landing page designed for a fintech product, featuring modern Framer Motion animations and a clean Tailwind CSS layout.",
-    tech: ["Vite", "React", "Tailwind CSS", "Framer Motion", "Lucide React"],
-    accentColor: "#3B82F6",
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
-    category: "Demo",
-    year: "2024",
-    industry: "Demo",
-    businessValue: "Highlights strong aesthetic choices and micro-interactions suitable for modern fintech apps.",
-    liveUrl: "https://fininclusion-landing-page.vercel.app/",
-    githubUrl: null,
-    featured: false,
-  },
-  {
     id: "fitcore-fitness",
-    number: "23",
     title: "Fitcore Fitness",
     subtitle: "Fitness Application Demo",
     description: "A Next.js based fitness platform interface. Uses Radix UI for accessible components and includes modern data visualization charts.",
@@ -508,7 +452,6 @@ export const projects = [
   },
   {
     id: "global-route-visa-and-travel",
-    number: "24",
     title: "Global Route Travel",
     subtitle: "Travel & Visa Services Demo",
     description: "A multipage React application for a travel and visa service agency. Built with Vite and structured with React Router for seamless navigation.",
@@ -525,7 +468,6 @@ export const projects = [
   },
   {
     id: "solerush",
-    number: "25",
     title: "SoleRush",
     subtitle: "Next.js 15 AI-Powered E-commerce Demo",
     description: "A cutting-edge e-commerce demo using Next.js 15, Turbopack, and Firebase. It integrates Genkit AI for advanced AI functionalities and Framer Motion for UI polish.",
@@ -542,7 +484,6 @@ export const projects = [
   },
   {
     id: "mydailytoolbox",
-    number: "26",
     title: "MyDailyToolbox",
     subtitle: "All-in-One Online Utility Platform",
     description: "A massive Next.js application providing over 70 free online tools including PDF editors, calculators, image compressors, and OCR utilities. Features purely client-side processing for enhanced speed and privacy.",
@@ -559,7 +500,6 @@ export const projects = [
   },
   {
     id: "finora-capital",
-    number: "27",
     title: "Finora Capital",
     subtitle: "Financial Dashboard & Capital Management Demo",
     description: "A comprehensive financial dashboard built with Next.js and Supabase. Features advanced data visualization with Recharts and robust form handling using Zod and React Hook Form.",
@@ -576,7 +516,6 @@ export const projects = [
   },
   {
     id: "eventist-crm",
-    number: "28",
     title: "Eventist CRM",
     subtitle: "Enterprise Event Management CRM",
     description: "A heavy-duty enterprise CRM for managing events, built with React and Redux Toolkit. Features robust data handling, massive forms via Formik/Yup, and extensive export capabilities (PDF, Excel).",
@@ -593,7 +532,6 @@ export const projects = [
   },
   {
     id: "saffron-and-ember",
-    number: "29",
     title: "Saffron & Ember",
     subtitle: "Modern American Dining Experience",
     description: "A premium fine-dining restaurant website featuring cinematic scroll animations, a bespoke dark mode aesthetic, and modern frontend architecture.",
@@ -610,7 +548,6 @@ export const projects = [
   },
   {
     id: "affinitysolarsolutions",
-    number: "30",
     title: "Affinity Solar Solutions",
     subtitle: "Premium Solar Panel Installations",
     description: "A high-performance landing page for a solar energy provider. Features robust animations with Framer Motion, a clean, modern aesthetic, and built using Next.js 16 and Tailwind CSS v4.",
@@ -627,7 +564,6 @@ export const projects = [
   },
   {
     id: "wellvila",
-    number: "31",
     title: "WellVilva",
     subtitle: "E-Commerce & Affiliate Platform",
     description: "A comprehensive React e-commerce application built with Vite and React Router. Includes product listings, cart management, and affiliate business plan pages.",
