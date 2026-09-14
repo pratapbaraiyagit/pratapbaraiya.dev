@@ -227,7 +227,7 @@ export const projects = [
     year: "2023",
     industry: "E-commerce / B2B",
     businessValue: "Reduced order processing errors by 25% and saved staff 10 hrs/week in manual invoice generation.",
-    liveUrl: "http://15.206.89.254:5500/",
+    liveUrl: null,
     githubUrl: null,
     featured: false,
   },
